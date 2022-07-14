@@ -24,7 +24,7 @@ db.defaults({ users: [] }).write();
 let port = process.env.PORT || 3000;
 
 // return all users
-app.get('/data', function (req, res) {
+app.get('/accounts', function (req, res) {
     res.send(db.get('users').value());
 });
 
