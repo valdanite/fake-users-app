@@ -29,7 +29,7 @@ app.get('/accounts', function (req, res) {
 });
 
 // add user
-app.post('/add', function (req, res) {
+app.post('/accounts', function (req, res) {
     var user = {
         'name': req.body.name,
         'dob': req.body.dob,
